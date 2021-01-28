@@ -5,11 +5,8 @@ services:
     build: .
     ports:
       - 8000:8000
-    links:
-      - db
-    volumes:
-      - ./app:/app
     working_dir: /app
-    env_file:
-      - ./.env
+    environment:
+      LANGUAGE_CODE: "ja"
+      TIME_ZONE: "Asia/Tokyo"
     tty: true

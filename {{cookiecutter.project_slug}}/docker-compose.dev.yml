@@ -1,6 +1,13 @@
 version: "3.8"
 
 services:
+  wagtail:
+    ports:
+      - 8000:8000
+    links:
+      - db
+    volumes:
+      - ./app:/app
   db:
     image: postgres:13.1-alpine
     environment:
