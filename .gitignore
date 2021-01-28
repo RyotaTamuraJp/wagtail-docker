@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Dev DB
+postgres/
+
 # OS
 .DS_Store
