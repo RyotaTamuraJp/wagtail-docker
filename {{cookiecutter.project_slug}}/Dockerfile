@@ -4,7 +4,7 @@ COPY ./app /app
 
 WORKDIR /app
 
-RUN apt update && \
+RUN apt-get update && \
     pip install --upgrade pip && \
     pip install -r requirements.txt
 
